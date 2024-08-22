@@ -1,5 +1,5 @@
-### <span style='color:#0891e9;'>Security Features of safexchange</span>
-The safexchange package provides robust security measures to protect client-server communications from various types of attacks, especially when requests are intercepted and modified. By encrypting request and response data, safexchange ensures that sensitive information is not exposed and prevents the execution of unauthorized actions.
+### <span style='color:#0891e9;'>Security Features of safeXchange (⚠️Practical Demo At Last⚠️)</span> 
+The safeXchange package provides robust security measures to protect client-server communications from various types of attacks, especially when requests are intercepted and modified. By encrypting request and response data, safeXchange ensures that sensitive information is not exposed and prevents the execution of unauthorized actions.
 
 ### This is how basically request or response interception works:
 <img src='./demo/Screenshot 2024-08-22 212448.png' />
@@ -9,7 +9,7 @@ The safexchange package provides robust security measures to protect client-serv
 
 ### <span style='color:#0891e9;'>How It Works</span>
 Client-Side Encryption:
-When a client sends a message to the server, safexchange intercepts the request on the client side and encrypts the request body using a predefined secret key. This encrypted data is then sent to the server.
+When a client sends a message to the server, safeXchange intercepts the request on the client side and encrypts the request body using a predefined secret key. This encrypted data is then sent to the server.
 
 ### <span style='color:#0891e9;'>Server-Side Decryption:</span>
 Upon receiving the encrypted request, the server decrypts the data using the same secret key. This ensures that any attempts to modify the data during transmission will result in an error, as the server will detect the tampering and reject the request.
@@ -18,7 +18,7 @@ Upon receiving the encrypted request, the server decrypts the data using the sam
 The server also encrypts its responses using the same secret key. The client then decrypts the response on its end, preventing any interception and modification of the response data.
 
 ### <span style='color:#0891e9;'>Protection Against Common Attacks</span>
-By encrypting both requests and responses, safexchange helps protect against the following attack vectors commonly exploited by tools like Burp Suite:
+By encrypting both requests and responses, safeXchange helps protect against the following attack vectors commonly exploited by tools like Burp Suite:
 
 
 ### <h3>SQL Injection:</h3>
@@ -74,7 +74,7 @@ Prevention: JWTs cannot be tampered with since they are encrypted during transmi
 Example Attack: Modifying the payload to escalate privileges.
 
 ### Tools and Functionalities in Burp Suite
-Even though Burp Suite is a powerful tool for testing vulnerabilities, the encryption provided by safexchange ensures that any intercepted data remains secure and unmodifiable. Burp Suite functionalities like Repeater, Intruder, and Scanner will be rendered ineffective against the encrypted data, providing a strong layer of protection.
+Even though Burp Suite is a powerful tool for testing vulnerabilities, the encryption provided by safeXchange ensures that any intercepted data remains secure and unmodifiable. Burp Suite functionalities like Repeater, Intruder, and Scanner will be rendered ineffective against the encrypted data, providing a strong layer of protection.
 
 ### <span style='color:#0891e9;'>Practical Demo: </span>
 
