@@ -87,7 +87,7 @@ Even though Burp Suite is a powerful tool for testing vulnerabilities, the encry
 <h2>This is how server handles that encrypted request data. Also can see the response Intercepted as a encrypted value.</h2>
 <img src='./demo/Screenshot (270).png' />
 
-<h2>This is how server handles that encrypted response data.</h2>
+<h2>This is how client handles that encrypted response data.</h2>
 <img src='./demo/Screenshot (272).png' />
 
 ### Will be Published in NPM soon.
